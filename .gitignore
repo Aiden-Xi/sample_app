@@ -1,0 +1,66 @@
+# Ignore IDE
+/.idea
+
+# Ignore nohup output
+nohup.out
+
+# Ignore project config
+config/*.yml
+
+# except some *.yml
+!config/admin.yml
+!config/cucumber.yml
+!config/secrets.yml
+!config/sidekiq.yml
+!config/sms.yml
+
+# Ignore MacOS .DS_Store
+.DS_Store
+._.DS_Store
+
+# Ignore yard doc
+doc
+.yardoc
+_yardoc/
+
+# Ignore Gemfile.lock backup
+Gemfile.lock
+Gemfile.lock.*
+
+vendor/
+
+# Ignore bundler config.
+/.bundle
+
+# Ignore the default SQLite database.
+/db/*.sqlite3
+/db/*.sqlite3-journal
+
+# Ignore all logfiles and tempfiles.
+/log/*
+!/log/.keep
+/tmp
+
+# Ignore db migrate files.
+db/migrate
+db/schema.rb
+
+# Ignore public files.
+public/uploads
+public/assets
+public/assets.tgz
+assets.tgz
+
+/coverage/
+/doc/
+/pkg/
+/spec/reports/
+/tmp/
+
+# Ignore PROD config file
+environments/api.careinner.com
+
+# 忽略资产文件
+assets.tgz
+public/assets.tgz
+public/assets/
