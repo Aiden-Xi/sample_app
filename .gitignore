@@ -24,8 +24,8 @@ doc
 _yardoc/
 
 # Ignore Gemfile.lock backup
-Gemfile.lock
-Gemfile.lock.*
+#Gemfile.lock
+#Gemfile.lock.*
 
 vendor/
 
