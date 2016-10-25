@@ -64,3 +64,6 @@ environments/api.careinner.com
 assets.tgz
 public/assets.tgz
 public/assets/
+
+# Ignore Spring files.
+/spring/*.pid
