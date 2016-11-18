@@ -8,15 +8,14 @@ class UsersController < ApplicationController
   end
 
   def create
-
-    Rails.logger.info "#{user_params}"
-
     @user = User.new(user_params) # 需要优化的方案
 
     if @user.save
-      flash[:success] = "Welcome to the Sample App!"
-      redirect_to @user
+      # sign_in @user
+
+      redirect_to @user, :flash => { :success => "Welcome to the Sample App!" }
     else
+      @title = "Sign up"
       render 'new'
     end
   end
