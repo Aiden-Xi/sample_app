@@ -9,7 +9,6 @@ class UsersController < ApplicationController
 
   def create
     @user = User.new(user_params) # 需要优化的方案
-
     if @user.save
       # sign_in @user
 
